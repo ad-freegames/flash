@@ -24,14 +24,14 @@
                 unmuteOverlay: "hidden",
             };
             document.addEventListener("DOMContentLoaded", function () {
-                let swf = 'https://ad-freegames.github.io/flash/icycle.html';
+                let swf = 'https://ad-freegames.github.io/files/icycle.swf';
                 if (swf) {
                     let ruffle = window.RufflePlayer.newest();
                     let player = Object.assign(document.getElementById("container").appendChild(ruffle.createPlayer()), {
                         style: 'width: 100vw; height: 100vh',
                     });
                                       player.load({
-                        url: 'https://ad-freegames.github.io/flash/icycle.html'
+                        url: 'https://ad-freegames.github.io/files/icycle.swf'
                     });  
 
                 }
