@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lemonade Stand</title>
+        <meta name="robots" content="noindex, nofollow">
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.RufflePlayer.config = {
+                autoplay: "on",
+                contextMenu: false,
+                unmuteOverlay: "hidden",
+            };
+            document.addEventListener("DOMContentLoaded", function () {
+                let swf = 'https://oldflashgames.github.io/games4/lemonade-stand.swf';
+                if (swf) {
+                    let ruffle = window.RufflePlayer.newest();
+                    let player = Object.assign(document.getElementById("container").appendChild(ruffle.createPlayer()), {
+                        style: 'width: 100vw; height: 100vh',
+                    });
+                                      player.load({
+                        url: 'https://oldflashgames.github.io/games4/lemonade-stand.swf'
+                    });  
+
+                }
+            });
+        </script>
+        <script src="https://oldflashgames.github.io/ruffle/ruffle.js"></script>
+    </body>
+</html>
