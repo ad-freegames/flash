@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta content=noindex,nofollow name=robots>
+    <title>Fish Eat Fish</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            text-align: center;
+            background: linear-gradient(navy, teal);
+            height: 100%;
+            overflow: hidden;       
+        }
+    </style>
+</head>
+<body>
+    <div id=container></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("DOMContentLoaded", () => {
+            let ruffle = window.RufflePlayer.newest();
+            let player = ruffle.createPlayer();
+            let container = document.getElementById("container");
+            container.appendChild(player);
+            player.load("https://oldflashgames.github.io/games4/fish-eat-fish.swf");
+            var flashX = 947.368421053;
+            var flashY = 600;
+            var gameRatio = ((flashX / flashY).toFixed(4)) * 100;
+            document.getElementsByTagName("ruffle-player")[0].style.height = "100vh";
+            document.getElementsByTagName("ruffle-player")[0].style.width = gameRatio + "vh";
+            document.getElementsByTagName("ruffle-player")[0].style.boxShadow = "0 0 5vmin 1vmin black";
+        });       
+    </script>
+    <script src="https://oldflashgames.github.io/ruffle/ruffle.js"></script>
+</body>
+</html>
