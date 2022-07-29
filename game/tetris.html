@@ -24,14 +24,14 @@
                 unmuteOverlay: "hidden",
             };
             document.addEventListener("DOMContentLoaded", function () {
-                let swf = 'swf/tetris.swf';
+                let swf = 'https://ad-freegames.github.io/flash/swf/tetris.swf';
                 if (swf) {
                     let ruffle = window.RufflePlayer.newest();
                     let player = Object.assign(document.getElementById("container").appendChild(ruffle.createPlayer()), {
                         style: 'width: 100vw; height: 100vh',
                     });
                                       player.load({
-                        url: 'swf/tetris.swf'
+                        url: 'https://ad-freegames.github.io/flash/swf/tetris.swf'
                     });  
 
                 }
